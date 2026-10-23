@@ -1,6 +1,6 @@
 # Digit Domain Shift
 
-Testing how badly a simple digit classifier breaks when the images shift a little, and how much new data it takes to fix it.
+Testing how badly a simple digit classifier breaks when the images shift a little, and how much new data it takes to fix it. Inspired by coursework using this data.
 
 The model is a small MLP (64 -> 64 -> 10, about 4.8k parameters) trained on the 8x8 handwritten digits dataset from scikit-learn. On the normal test set it gets 95% accuracy. For the "shifted" version of the data, every image gets moved one pixel to the right and has Gaussian noise added (std 0.15). The digits still look basically the same to a person, but the model drops to 46%.
 
